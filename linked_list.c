@@ -1,8 +1,8 @@
 #include "linked_list.h"
 
-#define LIST_NODE_SIZE(list) (sizeof(struct list_node) + list->value_size)
-
 #include <string.h>
+
+#define LIST_NODE_SIZE(list) (sizeof(struct list_node) + list->value_size)
 
 struct linked_list *linked_list_init(struct linked_list* list, size_t value_size, equals_fun equals)
 {
